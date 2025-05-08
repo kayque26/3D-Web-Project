@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="about-styles.css">
+</head>
+
+<div id="main-container">
+    <div id="header-contained"></div>
+    <div id="navbar-contained">
+        <ul class="nav">
+            <li><a href="submission.html">Home</a></li>
+            <li><a href="Model1.html">Model 1</a></li>
+            <li><a href="Model2.html">Model 2</a></li>
+            <li><a href="Model3.html">Model 3</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </div>
+    <div class="content-wrap flex alignment">
+        <div id="content-container" style="flex-grow: 1;">
+            <div class="wrapper">
+                <h2>About This Project</h2>
+
+                <h3>3D Models</h3>
+                <p>For my 3D App, I created three original 3D models in <strong>Blender</strong>:
+                    a <strong>teapot with cups</strong>, an <strong>iPod Nano</strong>, and a <strong>DJ booth with vinyls</strong>.
+                    I made all the textures myself, except for the vinyl labels and album cover images, which I sourced externally.
+                    Each model was exported as a <code>.glb</code> file to maintain material and animation compatibility.
+                </p>
+
+                <h3>Design</h3>
+                <p>I designed the site, using images, gifs and fonts from the web to resemble a <strong>2000s-era website</strong>, using CSS and Javascript.
+                    JavaScript handles most of the interactivity, including hover effects and audio playback for a retro tech vibe.
+                </p>
+
+                <h3>Integration</h3>
+                <p>I used <strong>Three.js</strong> to display and animate the models. 
+                    Audio clips were edited and synced to animations using <strong>CapCut</strong>, then embedded in the site.
+                    Additional images and text appear contextually based on the active model.
+                </p>
+
+                <h3>Interaction</h3>
+                <p>The models can be rotated and zoomed using <strong>OrbitControls</strong>. 
+                    JavaScript buttons allow users to toggle wireframe views, swap models, and trigger animations or sounds. These were part of the requirements. 
+                    I added further interactions such as button hovers, and sounds designed to support the 2000s aesthetic.
+                </p>
+
+                <h3>Implementation</h3>
+                <p>The project uses <strong>HTML5, CSS3, JavaScript, and Three.js</strong>. 
+                    I organized assets into folders and tested functionality in Chrome and Firefox. 
+                    Interactions are handled manually via JavaScript for flexibility and custom control.
+                </p>
+
+                <h3>Deeper Understanding</h3>
+                <ul>
+                    <li>I created original 3D models from scratch and applied my own textures.</li>
+                    <li>I built a fully custom UI with JavaScript and CSS.</li>
+                    <li>I synced animation and sound externally in CapCut, then integrated them precisely.</li>
+                    <li>I designed the entire experience to follow a nostalgic web aesthetic with purposefully styled interactions.</li>
+                </ul>
+
+                <h3>Publication & Testing</h3>
+                <p> 
+                    I have tested the zipped folder in Visual Studio Code and confirmed that the site loads correctly. 
+                    All assets and scripts work as intended on the university's web server.
+                    I tested my 3D website in Chrome to make sure that the rendering of models, animations, and audio was working fine. There were testing sessions in week 11, where I only had a wireframe of the website. The feedback I recieved for the wireframe was that the layout was nice visually, so that is present throughout the all of the webpages. During the testing that took place after, I received feedback that the layout felt a bit cramped so I adjusted the sizes. Some testers also found the background colour too bright when combined with the text, so I tweaked the contrast and font weight to improve readability.
+                </p>
+
+                <h3>Model Previews</h3>
+                <div class="media-gallery">
+                    <figure>
+                        <img src="About media/Images and Videos/Teapot.png" alt="Teapot and cups 3D model" width="300">
+                        <figcaption>Teapot and Cups Model</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="About media/Images and Videos/IPOD.png" alt="iPod Nano 3D model" width="300">
+                        <figcaption>iPod Nano Model</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="About media/Images and Videos/DJBooth.png" alt="DJ Booth with vinyls 3D model" width="300">
+                        <figcaption>DJ Booth Model</figcaption>
+                    </figure>
+                </div>
+
+                <!-- 🎥 Videos -->
+                <h3>Animation Demos</h3>
+                <p>Below are the intended/original second animations that I wanted to use, but due to their complexity, they didn't render successfully.</p>
+                <div class="media-gallery">
+                    <video width="400" controls>
+                        <source src="About media/Images and Videos/TeacupBreak/TeacupBreak.mp4" type="video/mp4">
+                        
+                    </video>
+                    <video width="400" controls>
+                        <source src="About media/Images and Videos/Ipod FLIP/Ipod FLIP.mp4" type="video/mp4">
+                        
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-wrapper">Thank you!</div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="visuals.js"></script> 
+</div>

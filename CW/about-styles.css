@@ -1,0 +1,235 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Images/HomePage/backgroundperhaps.jpg'); /* your gif path here */
+    background-size: cover;          /* makes it fill the screen */
+    background-repeat: no-repeat;    /* no tiling */
+    background-position: center;     /* centers the gif */
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.3em;
+    color: black;
+}
+
+@font-face {
+    font-family: 'Dodopop';
+    src: url('fonts/Dodopop-RegularPersonalUse.woff2') format('woff2'),
+        url('fonts/Dodopop-RegularPersonalUse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DECODER';
+    src: url('fonts/Decoder.woff2') format('woff2'),
+        url('fonts/Decoder.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body a {
+    color: #22506A;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #3DA2B7;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.content-wrap {
+    margin-top: var(--content-margin-top);
+}
+
+#content-container {
+    width: 80%;
+    margin-bottom: 5px;
+    background-color: #65CAFE;
+}
+
+#left-sidebar,
+#right-sidebar {
+    width: 150px;
+    margin-bottom: 5px;
+    height: 100%;
+    overflow: hidden;
+    background-color: #65CAFE;
+    font-family: 'Dodopop';
+    font-size: large;
+    color: rgb(54, 113, 45);
+}
+
+#left-sidebar {
+    margin-right: 10px;
+}
+
+#right-sidebar {
+    margin-left: 10px;
+}
+
+#header-contained,
+#header-full {
+    height: 150px;
+    margin-bottom: 0px;
+    background-image: url(images/HomePage/test2.jpg);
+    background-position: center center;
+    
+}
+
+#footer {
+    height: 30px;
+    text-align: center;
+    color: black;
+    background-color: #65CAFE;
+}
+
+#navbar-contained {
+    margin-bottom: 5px;
+}
+
+
+.nav {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #65CAFE;
+    font-family: 'DECODER';
+    font-size: large;
+}
+
+.nav li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.wrapper {
+    padding: 25px;
+    padding-top: 15px;
+}
+
+.sidebar-wrapper {
+    padding: 15px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.footer-wrapper {
+    padding: 5px;
+}
+
+.hover-glow {
+    color: #FFD700;
+    text-shadow: 0 0 8px #FFD700;
+    transition: all 0.3s ease;
+}
+
+.image-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.image-button button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.image-button img {
+    width: 50px; 
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.image-button img:hover {
+    transform: scale(1.2) rotate(2deg);
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    #left-sidebar,
+    #right-sidebar,
+    #content-container {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #left-sidebar {
+        order: 2;
+    }
+
+    #right-sidebar {
+        order: 3;
+    }
+
+    #content-container {
+        order: 1;
+    }
+}
+
+.bottom-img {
+   display: flex;
+   justify-content: center;
+}
+
+.leftSide { 
+    grid-area: leftSide; 
+}
+
+.bmpStickers{
+    margin-right: auto;
+}
+
+#content-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    margin: 0 auto;
+}
+
+.media-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.media-gallery figure {
+    text-align: center;
+    margin: 0;
+    font-family: 'Dodopop';
+    font-size: 14px;
+    color: black;
+}
+
+.media-gallery img,
+.media-gallery video {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
+}
+

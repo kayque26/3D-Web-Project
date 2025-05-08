@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Models!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/OrbitControls.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/GLTFLoader.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js" integrity="sha512-WoO4Ih0CDOSLYafy22wZD/mcJ7k0ESLqtQsFa6zFKnEUrbtuGU+GkLtVhgt93xa2qewG5gKEC6CWlN8OaCTSVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<body>
+    <div id="header-full" style="display: none;"></div>
+    <div id="navbar-full" style="display: none;">
+        <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Model 1</a></li>
+            <li><a href="#">Model 2</a></li>
+            <li><a href="#">Model 3</a></li>
+           
+        </ul>
+    </div>
+
+    <div id="main-container">
+        <div id="header-contained" style="display: block;"></div>
+        <div id="navbar-contained" style="display: block;">
+            <ul class="nav">
+                <li><a href="submission.html">Home</a></li>
+                <li><a href="Model1.html">Model 1</a></li>
+                <li><a href="Model2.html">Model 2</a></li>
+                <li><a href="Model3.html">Model 3</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </div>
+        <div class="content-wrap flex alignment">
+            <div id="left-sidebar" style="display: block;">
+                <div class="sidebar-wrapper">
+                    really, the issue with the internet and everything modern these days is that everything is getting more boring. remember when people thought the year <mark>2000</mark> would mean futuristic this and futuristic that. meanwhile, now, in the age of the <mark>2020's</mark>, we're regressing in terms of design! i hate how everything has gone backwards and i think it's very important to preserve aesthetic.
+                </div>
+            </div>
+
+            <div class="image-button">
+                <button id="prevBtn">
+                    <img src="Images/HomePage/left.png" alt="Previous">
+                </button>
+            </div>
+             
+            
+            <div id="content-container" style="flex-grow: 1;">
+                <div class="wrapper">
+                    3d model is Here
+                </div>
+            </div>
+
+            <div class="image-button">
+                <button id="nextBtn">
+                    <img src="Images/HomePage/right.png" alt="Next">
+                </button>
+            </div>
+
+            <div id="right-sidebar" style="display: block;">
+                <div class="sidebar-wrapper">
+                    with this in mind, here is a quick preview of some 3D models i've created that all sort of fit the colourful, lively vibe that we experienced in the past. to learn more about these objects in detail, please click on the links above to go to their specified pages!
+                </div>
+            </div>
+            
+        </div> 
+        
+        <div class="bmpStickers">
+                <img src="Images/HomePage/penguins_leave_us_out.png">
+                <img src="Images/HomePage/stuffs_hap_intnet.gif">
+                <img src="Images/HomePage/internet_grip.gif">
+                <img src="Images/HomePage/lols_fake.gif">
+                <img src="Images/HomePage/0166-finfin.gif">
+                <img src="Images/HomePage/0187-transparentsparkle.gif">
+            </div>
+        <div id="footer">
+            <div class="footer-wrapper">ଘ(੭*ˊᵕˋ)੭* ੈ♡‧₊˚</div>
+        </div>
+    </div>
+
+    <div class="bottom-img">
+        <img src="Images/HomePage/353.gif" alt="Sticker Top" style="display: block; margin: 10px auto;" />
+        <img src="Images/HomePage/adance2.gif" alt="Sticker Top" style="display: block; margin: 10px auto;" />
+        <img src="Images/HomePage/yellowman.gif" alt="Sticker Top" style="display: block; margin: 10px auto;" />
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="visuals.js"></script>    
+
+</body>
+</html>

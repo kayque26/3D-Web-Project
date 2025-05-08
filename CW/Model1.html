@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ BOOTH</title>
+  <link rel="stylesheet" href="styles2.css" />
+  <link rel="stylesheet" href="styles-button.css"/>
+</head>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/OrbitControls.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/GLTFLoader.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js" integrity="sha512-WoO4Ih0CDOSLYafy22wZD/mcJ7k0ESLqtQsFa6zFKnEUrbtuGU+GkLtVhgt93xa2qewG5gKEC6CWlN8OaCTSVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<body>
+
+  <div id="navbar-full" style="display: block;">
+    <ul class="nav">
+      <li><a href="submission.html">Home</a></li>
+      <li><a href="Model1.html">Model 1</a></li>
+      <li><a href="Model2.html">Model 2</a></li>
+      <li><a href="Model3.html">Model 3</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+  </div>
+  
+  <img src="Images/Model 1/dancer_blue.gif" style="display: block; margin: 10px auto;" />
+
+  <div id="main-container">
+    <div class="content-wrap flex alignment">
+      <div id="left-sidebar" style="display: none;">
+        <div class="sidebar-wrapper">
+          empty
+        </div>
+      </div>
+
+      <div id="content-container" style="flex-grow: 1;">
+        <div class="wrapper">
+           <div id="gui-container"></div>
+          <div id="model-wrapper" style="width: 100%; height: 500px;"></div>
+      
+         
+
+          <div id="button-panel">
+            <button id="btn">Put some records on!</button>
+            <button id="toggleWireframe">Toggle Wireframe</button>
+            <button id="rotate">Rotate</button>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div id="right-sidebar" style="display: block;">
+        <div class="sidebar-wrapper">
+          Here is my custom 3D Model of a futuristic DJ Booth! Press the buttons to see what it can do!
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="footer-wrapper">✩°｡⋆⸜ 🎧 ‧₊˚🖇️ ✮⋆˙ ₊˚🎧⊹⋆｡𖦹 °</div>
+    </div>
+  </div>
+
+  <div class="bottom-img">
+    <img src="Images/Model 1/3D_dolphin.gif" alt="Sticker Top" style="display: block; margin: 10px auto;" />
+    <img src="Images/Model 1/sony-174.gif" alt="Sticker Top" style="display: block; margin: 10px auto;" />
+    <img src="Images/Model 1/porygon.gif" alt="Sticker Top" style="display: block; margin: 10px auto;" />
+</div>
+  
+
+</body>
+
+<script src="script2.js"></script>
+<script src="visuals.js"></script>
+
+</html>
